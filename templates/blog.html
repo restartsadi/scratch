@@ -1,0 +1,20 @@
+{%  extends 'base.html' %}
+
+{% block content %}
+
+{% if  sunny %}
+<h1> Today Is Sun Day </h1>
+{% else %}
+<h1> Today is Rainy Day</h1>
+{% endif %}
+
+{% for post in posts %}
+<h3>The name of this data scientist is : {{post.name}}</h3>
+<h3>The will be upon : {{post.subject}}</h3>
+<h3>Name of IIT and World Bank's Program is : {{post.program}}</h3>
+<h3>3 Month's program organized by : {{post.organized_by}}</h3>
+{% endfor %}
+
+{% endblock %}
+
+
